@@ -181,16 +181,18 @@
           <div class="bg-surface-low rounded-lg p-6 shadow-soft">
             <h3 class="text-lg font-700 text-primary mb-3">Schedule Directly</h3>
             <p class="text-sm text-primary/60 mb-4">Prefer to pick a time right now? Use the calendar below.</p>
-            <!-- Booking Widget — replace BOOKING_URL with real appointment schedule link -->
-            <div id="booking-widget" class="bg-surface rounded-lg p-6 text-center">
-              <span class="material-symbols-outlined text-secondary text-4xl mb-3 block">event_available</span>
-              <h4 class="text-base font-700 text-primary mb-2">Pick a Time That Works</h4>
-              <p class="text-sm text-primary/60 mb-4">Choose a 30-minute slot for your strategy session. We'll send a Google Meet link.</p>
-              <a href="mailto:hello@brightwire.ai?subject=Strategy%20Session%20Request&body=Hi%20BrightWire%20team%2C%0A%0AI'd%20like%20to%20schedule%20a%20strategy%20session.%0A%0APreferred%20times%3A%0ACompany%3A%0ARole%3A%0A" class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-primary font-600 rounded-full hover:bg-secondary/80 transition-colors text-sm">
-                <span class="material-symbols-outlined text-lg">calendar_month</span>
-                Request a Time Slot
-              </a>
-              <p class="text-xs text-primary/30 mt-3">Or fill out the form — we'll reach out within 24 hours.</p>
+            <!-- Google Calendar Appointment Scheduling — Brightwire AI Consultation -->
+            <div id="booking-widget" class="bg-surface rounded-lg overflow-hidden">
+              <iframe src="https://calendar.google.com/calendar/appointments/AcZssZ3PQFCS8Ji1rduOk339MEFE-Ym0WnkZI-DyF-s=?gv=true" style="border: 0" width="100%" height="600" frameborder="0" loading="lazy"></iframe>
+              <noscript>
+                <div class="p-6 text-center">
+                  <p class="text-sm text-primary/60 mb-4">Book a free consultation directly on our calendar.</p>
+                  <a href="https://calendar.google.com/calendar/appointments/AcZssZ3PQFCS8Ji1rduOk339MEFE-Ym0WnkZI-DyF-s=" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-primary font-600 rounded-full hover:bg-secondary/80 transition-colors text-sm">
+                    <span class="material-symbols-outlined text-lg">calendar_month</span>
+                    Book on Google Calendar
+                  </a>
+                </div>
+              </noscript>
             </div>
           </div>
 
