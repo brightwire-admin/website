@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & How We Work — BrightWire AI</title>
+  <meta name="description" content="BrightWire offers AI Roadmapping, Managed Integration, and Staff Enablement services for energy companies. See how we work and what to expect from each engagement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#331956',
+            'primary-container': '#4a306d',
+            secondary: '#7c5800',
+            'secondary-container': '#fdc65c',
+            tertiary: '#0d2d20',
+            'tertiary-container': '#244335',
+            surface: '#fef7fe',
+            'surface-low': '#f8f2f8',
+            'surface-mid': '#f0e8f0',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            DEFAULT: '1rem',
+            lg: '2rem',
+            xl: '3rem',
+            full: '9999px',
+          },
+          boxShadow: {
+            soft: '0 4px 24px rgba(74, 48, 109, 0.06)',
+            md: '0 8px 32px rgba(74, 48, 109, 0.08)',
+            lg: '0 16px 48px rgba(74, 48, 109, 0.10)',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-surface font-sans text-primary antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-3xl shadow-soft">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="text-xl sm:text-2xl font-800 text-primary tracking-tight">
+          Bright<span class="text-secondary">Wire</span>
+        </a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Home</a>
+          <a href="services.html" class="px-4 py-2 text-sm font-700 text-primary border-b-2 border-secondary">Services</a>
+          <a href="roadmap.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Roadmap</a>
+          <a href="local-ai.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Private AI</a>
+          <a href="consultation.html" class="ml-4 px-6 py-2.5 bg-primary text-white text-sm font-600 rounded-full hover:bg-primary-container transition-colors shadow-soft">
+            Book a Consultation
+          </a>
+        </div>
+        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-primary">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-1 bg-surface-low rounded-lg p-3">
+          <a href="index.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Home</a>
+          <a href="services.html" class="px-4 py-3 text-sm font-700 text-primary bg-surface rounded-lg">Services</a>
+          <a href="roadmap.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Roadmap</a>
+          <a href="local-ai.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Private AI</a>
+          <a href="consultation.html" class="mt-2 px-6 py-3 bg-primary text-white text-sm font-600 rounded-full text-center shadow-soft">Book a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-28 sm:pt-36 pb-16 sm:pb-20 bg-surface-low">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary-container/30 rounded-full text-secondary text-sm font-600 mb-6">
+          <span class="material-symbols-outlined text-base">handyman</span>
+          Services
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-800 text-primary leading-tight mb-6">
+          AI Integration,<br>End to End
+        </h1>
+        <p class="text-lg sm:text-xl text-primary/70 leading-relaxed max-w-2xl">
+          From initial assessment through deployment and training, BrightWire handles every step. You focus on your business — we handle the AI.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Three Core Services -->
+  <section class="py-16 sm:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Service 1: AI Roadmapping -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 sm:mb-28">
+        <div>
+          <div class="w-14 h-14 bg-secondary-container/30 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-secondary text-2xl">map</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">AI Roadmapping</h2>
+          <p class="text-lg text-primary/70 leading-relaxed mb-6">
+            Before you build anything, you need a plan. We assess your current operations, data landscape, and team readiness — then deliver a phased AI adoption roadmap tailored to your organization.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Operational Assessment</h4>
+                <p class="text-sm text-primary/60">We map your workflows, data sources, and pain points to find where AI delivers the highest ROI.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Phased Adoption Plan</h4>
+                <p class="text-sm text-primary/60">A concrete roadmap from Phase 1 to Phase 4, with timelines, milestones, and decision gates at each step.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-secondary mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Risk & Readiness Report</h4>
+                <p class="text-sm text-primary/60">Honest assessment of where your data and team stand today — and what needs to change before each phase.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200" alt="Strategy meeting" class="rounded-lg shadow-lg w-full object-cover h-64 sm:h-80">
+        </div>
+      </div>
+
+      <!-- Service 2: Managed Integration -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20 sm:mb-28">
+        <div class="order-2 lg:order-1 relative">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200" alt="Technology dashboard" class="rounded-lg shadow-lg w-full object-cover h-64 sm:h-80">
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="w-14 h-14 bg-tertiary-container/20 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-tertiary text-2xl">build</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">Managed Integration</h2>
+          <p class="text-lg text-primary/70 leading-relaxed mb-6">
+            We don't hand you a codebase and wish you luck. BrightWire builds, deploys, and operates your AI tools as a managed service. Your team uses them — we keep them running, secure, and improving.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Full-Stack Deployment</h4>
+                <p class="text-sm text-primary/60">From infrastructure to user interface, we handle the entire technical stack — cloud or on-premise.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Ongoing Management</h4>
+                <p class="text-sm text-primary/60">Monitoring, updates, model tuning, and support. We treat your AI tools like a product, not a project.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Data Integration</h4>
+                <p class="text-sm text-primary/60">We connect to your existing systems — document repositories, operational databases, reporting tools — without disrupting workflows.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: Staff Enablement -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <div class="w-14 h-14 bg-primary-container/20 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-primary-container text-2xl">school</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">Staff Enablement</h2>
+          <p class="text-lg text-primary/70 leading-relaxed mb-6">
+            The best AI tool in the world is useless if nobody uses it. We build training programs and change management strategies that get your team comfortable, confident, and productive with AI.
+          </p>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary-container mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Role-Based Training</h4>
+                <p class="text-sm text-primary/60">Different roles need different things. Executives get strategy context. Operators get hands-on tool training. IT gets architecture deep-dives.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary-container mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Change Management</h4>
+                <p class="text-sm text-primary/60">We help identify internal champions, address resistance early, and build the feedback loops that drive real adoption.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary-container mt-0.5">check_circle</span>
+              <div>
+                <h4 class="font-600 text-primary">Ongoing Support</h4>
+                <p class="text-sm text-primary/60">Office hours, documentation, and a dedicated Slack/Teams channel for questions as your team ramps up.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200" alt="Team collaboration" class="rounded-lg shadow-lg w-full object-cover h-64 sm:h-80">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="py-16 sm:py-24 bg-surface-low">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">How We Work</h2>
+        <p class="text-lg text-primary/60 max-w-2xl mx-auto">
+          Every engagement follows the same honest process. No surprises, no scope creep, no black boxes.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Step 1 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft relative">
+          <div class="absolute -top-3 left-6 bg-secondary-container text-primary text-xs font-800 px-3 py-1 rounded-full">Step 1</div>
+          <div class="mt-3">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">discovery_tune</span>
+            <h3 class="text-lg font-700 text-primary mb-2">Discovery Call</h3>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              We start with a conversation — not a sales pitch. What are your pain points? Where does your team spend the most time on manual work? What does your data landscape look like?
+            </p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft relative">
+          <div class="absolute -top-3 left-6 bg-secondary-container text-primary text-xs font-800 px-3 py-1 rounded-full">Step 2</div>
+          <div class="mt-3">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">assignment</span>
+            <h3 class="text-lg font-700 text-primary mb-2">Assessment & Roadmap</h3>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              We dig into your workflows and data. The output: a clear roadmap showing exactly which phase to start at, what it costs, and what you'll get. No jargon, no hand-waving.
+            </p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft relative">
+          <div class="absolute -top-3 left-6 bg-secondary-container text-primary text-xs font-800 px-3 py-1 rounded-full">Step 3</div>
+          <div class="mt-3">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">rocket_launch</span>
+            <h3 class="text-lg font-700 text-primary mb-2">Build & Deploy</h3>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              We build your Phase 1 tool, connect it to your data, and deploy it. Your team starts using it — and providing feedback — within weeks, not months.
+            </p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft relative">
+          <div class="absolute -top-3 left-6 bg-secondary-container text-primary text-xs font-800 px-3 py-1 rounded-full">Step 4</div>
+          <div class="mt-3">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">trending_up</span>
+            <h3 class="text-lg font-700 text-primary mb-2">Manage & Evolve</h3>
+            <p class="text-sm text-primary/60 leading-relaxed">
+              We operate your tools as a managed service — monitoring, improving, and expanding. When your team is ready, we move to the next phase together.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Methodology Walkthroughs -->
+  <section class="py-16 sm:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">Here's How We Approach It</h2>
+        <p class="text-lg text-primary/60 max-w-2xl mx-auto">
+          Real examples of how our methodology applies to common energy industry challenges.
+        </p>
+      </div>
+
+      <div class="space-y-8">
+        <!-- Approach 1 -->
+        <div class="bg-surface-low rounded-lg p-8 sm:p-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-secondary text-2xl">description</span>
+            <h3 class="text-xl font-700 text-primary">Reducing Time Spent on Manual Reporting</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">The Problem</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                Teams spend hours every week pulling data from multiple systems, formatting spreadsheets, and assembling reports that could be automated.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">Our Approach</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                We start with a Phase 1 chatbot trained on existing reports and documentation. Staff ask questions in plain English ("What was our output last week?") and get instant answers — eliminating the data scavenger hunt.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">What Comes Next</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                Once the team trusts the tool, we layer in Phase 2 dashboards that pull live data and auto-generate the reports that used to take hours.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Approach 2 -->
+        <div class="bg-surface-low rounded-lg p-8 sm:p-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-secondary text-2xl">policy</span>
+            <h3 class="text-xl font-700 text-primary">Making Institutional Knowledge Accessible</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">The Problem</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                Critical operational knowledge lives in the heads of a few senior employees, scattered across thousands of documents, or buried in legacy systems no one knows how to query.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">Our Approach</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                We ingest your document repositories into a RAG-powered chatbot (Phase 1) that can answer questions like "What's our procedure for X?" or "Where do I find the spec for Y?" — instantly and accurately.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">What Comes Next</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                As more documents get indexed and usage grows, the system becomes a living knowledge base — reducing onboarding time and protecting against knowledge loss when employees leave.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Approach 3 -->
+        <div class="bg-surface-low rounded-lg p-8 sm:p-10">
+          <div class="flex items-center gap-3 mb-4">
+            <span class="material-symbols-outlined text-secondary text-2xl">monitoring</span>
+            <h3 class="text-xl font-700 text-primary">Proactive Operations Monitoring</h3>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">The Problem</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                Operations teams react to problems after they happen. Anomalies in production data, equipment drift, or compliance gaps get caught late — or not at all.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">Our Approach</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                After trust is built with Phases 1 and 2, we deploy Phase 3 data agents that continuously monitor operational data, flag anomalies, and surface recommendations — with human approval for every action.
+              </p>
+            </div>
+            <div>
+              <h4 class="text-sm font-700 text-primary/80 uppercase tracking-wider mb-2">What Comes Next</h4>
+              <p class="text-sm text-primary/60 leading-relaxed">
+                Over time, the team identifies patterns that can be automated with confidence. Phase 4 handles routine responses within tight guardrails, freeing the team for higher-value work.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Engagement Model -->
+  <section class="py-16 sm:py-24 bg-surface-low">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-8 text-center">Engagement Model</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div class="bg-surface rounded-lg p-6 shadow-soft">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">event_available</span>
+          <h3 class="text-lg font-700 text-primary mb-2">Project-Based</h3>
+          <p class="text-sm text-primary/60 leading-relaxed">
+            Defined scope, fixed timeline. Best for AI roadmapping engagements and initial Phase 1 deployments. Clear deliverables, predictable cost.
+          </p>
+        </div>
+        <div class="bg-surface rounded-lg p-6 shadow-soft">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">all_inclusive</span>
+          <h3 class="text-lg font-700 text-primary mb-2">Managed Service</h3>
+          <p class="text-sm text-primary/60 leading-relaxed">
+            Ongoing partnership. We operate, monitor, and improve your AI tools month-over-month. Best for companies that want AI as a service, not a project.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-24 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-800 text-white mb-4">Let's Talk About Your Operations</h2>
+      <p class="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
+        Every engagement starts with a conversation. Tell us about your challenges, and we'll show you what Phase 1 could look like for your team.
+      </p>
+      <a href="consultation.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary-container text-primary font-700 rounded-full hover:bg-yellow-300 transition-colors shadow-md text-base">
+        <span class="material-symbols-outlined text-xl">calendar_month</span>
+        Book a Strategy Session
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <a href="index.html" class="text-2xl font-800 text-white tracking-tight">
+            Bright<span class="text-secondary-container">Wire</span>
+          </a>
+          <p class="text-white/50 mt-3 max-w-md leading-relaxed">
+            Managed AI integration for energy companies. Start safe, scale smart.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm font-700 text-white/80 uppercase tracking-wider mb-4">Navigate</h4>
+          <div class="flex flex-col gap-2">
+            <a href="index.html" class="text-white/50 hover:text-white transition-colors text-sm">Home</a>
+            <a href="services.html" class="text-white/50 hover:text-white transition-colors text-sm">Services</a>
+            <a href="roadmap.html" class="text-white/50 hover:text-white transition-colors text-sm">AI Roadmap</a>
+            <a href="local-ai.html" class="text-white/50 hover:text-white transition-colors text-sm">Private AI</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-700 text-white/80 uppercase tracking-wider mb-4">Get Started</h4>
+          <div class="flex flex-col gap-2">
+            <a href="consultation.html" class="text-white/50 hover:text-white transition-colors text-sm">Book a Consultation</a>
+            <a href="roadmap.html" class="text-white/50 hover:text-white transition-colors text-sm">The 4-Phase Model</a>
+            <a href="mailto:hello@brightwire.ai" class="text-white/50 hover:text-white transition-colors text-sm">hello@brightwire.ai</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <p class="text-white/40 text-sm">&copy; 2026 BrightWire AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

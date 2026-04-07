@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private AI — BrightWire AI</title>
+  <meta name="description" content="Keep your data where it belongs — in your building. BrightWire deploys private, on-premise AI infrastructure for energy companies that need compliance, IP protection, and data sovereignty.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#331956',
+            'primary-container': '#4a306d',
+            secondary: '#7c5800',
+            'secondary-container': '#fdc65c',
+            tertiary: '#0d2d20',
+            'tertiary-container': '#244335',
+            surface: '#fef7fe',
+            'surface-low': '#f8f2f8',
+            'surface-mid': '#f0e8f0',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            DEFAULT: '1rem',
+            lg: '2rem',
+            xl: '3rem',
+            full: '9999px',
+          },
+          boxShadow: {
+            soft: '0 4px 24px rgba(74, 48, 109, 0.06)',
+            md: '0 8px 32px rgba(74, 48, 109, 0.08)',
+            lg: '0 16px 48px rgba(74, 48, 109, 0.10)',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-surface font-sans text-primary antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-3xl shadow-soft">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="text-xl sm:text-2xl font-800 text-primary tracking-tight">
+          Bright<span class="text-secondary">Wire</span>
+        </a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Home</a>
+          <a href="services.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Services</a>
+          <a href="roadmap.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Roadmap</a>
+          <a href="local-ai.html" class="px-4 py-2 text-sm font-700 text-primary border-b-2 border-secondary">Private AI</a>
+          <a href="consultation.html" class="ml-4 px-6 py-2.5 bg-primary text-white text-sm font-600 rounded-full hover:bg-primary-container transition-colors shadow-soft">
+            Book a Consultation
+          </a>
+        </div>
+        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-primary">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-1 bg-surface-low rounded-lg p-3">
+          <a href="index.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Home</a>
+          <a href="services.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Services</a>
+          <a href="roadmap.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Roadmap</a>
+          <a href="local-ai.html" class="px-4 py-3 text-sm font-700 text-primary bg-surface rounded-lg">Private AI</a>
+          <a href="consultation.html" class="mt-2 px-6 py-3 bg-primary text-white text-sm font-600 rounded-full text-center shadow-soft">Book a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative pt-28 sm:pt-36 pb-16 sm:pb-20 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200" alt="Data center infrastructure" class="w-full h-full object-cover opacity-8">
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-tertiary-container/20 rounded-full text-tertiary text-sm font-600 mb-6">
+          <span class="material-symbols-outlined text-base">lock</span>
+          Private AI Infrastructure
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-800 text-primary leading-tight mb-6">
+          Your Data Never<br>
+          Leaves Your Building
+        </h1>
+        <p class="text-lg sm:text-xl text-primary/70 leading-relaxed max-w-2xl">
+          Energy companies handle sensitive operational data, proprietary processes, and regulated information. BrightWire deploys AI that runs entirely on your infrastructure — no cloud dependencies, no data exposure.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why It Matters -->
+  <section class="py-16 sm:py-24 bg-surface-low">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">Why Private AI Matters for Energy</h2>
+        <p class="text-lg text-primary/60 max-w-2xl mx-auto">
+          When your AI tools process operational data through external cloud services, that data is outside your control. For energy companies, that's often a non-starter.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Compliance -->
+        <div class="bg-surface rounded-lg p-8 shadow-soft">
+          <div class="w-14 h-14 bg-tertiary-container/20 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-tertiary text-2xl">gavel</span>
+          </div>
+          <h3 class="text-xl font-700 text-primary mb-3">Regulatory Compliance</h3>
+          <p class="text-primary/60 leading-relaxed">
+            Energy companies operate under strict regulatory frameworks. When operational data, compliance records, or grid information gets processed through third-party cloud services, it creates compliance complexity that's hard to manage and harder to audit.
+          </p>
+        </div>
+        <!-- IP Protection -->
+        <div class="bg-surface rounded-lg p-8 shadow-soft">
+          <div class="w-14 h-14 bg-secondary-container/30 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-secondary text-2xl">shield</span>
+          </div>
+          <h3 class="text-xl font-700 text-primary mb-3">Intellectual Property</h3>
+          <p class="text-primary/60 leading-relaxed">
+            Your operational procedures, maintenance protocols, performance data, and institutional knowledge are competitive advantages. Sending them to external AI providers means trusting someone else to protect your IP — and hoping their terms of service don't change.
+          </p>
+        </div>
+        <!-- Operational Sensitivity -->
+        <div class="bg-surface rounded-lg p-8 shadow-soft">
+          <div class="w-14 h-14 bg-primary-container/20 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-primary-container text-2xl">security</span>
+          </div>
+          <h3 class="text-xl font-700 text-primary mb-3">Operational Data Sensitivity</h3>
+          <p class="text-primary/60 leading-relaxed">
+            Real-time production data, equipment performance metrics, and grid information are sensitive by nature. Private AI ensures this data stays within your security perimeter — processed locally, stored locally, controlled by you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Deploy -->
+  <section class="py-16 sm:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-6">How BrightWire Deploys Private AI</h2>
+          <p class="text-lg text-primary/70 leading-relaxed mb-8">
+            We set up AI infrastructure that runs entirely within your environment. No data leaves your network. No cloud API calls with your sensitive information. Everything stays behind your firewall.
+          </p>
+          
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-tertiary-container/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-tertiary">dns</span>
+              </div>
+              <div>
+                <h3 class="font-700 text-primary mb-1">On-Premise AI Models</h3>
+                <p class="text-primary/60 leading-relaxed">
+                  We deploy open-source language models directly on your hardware or in your private data center. The models run locally — no internet connection required for inference.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-secondary-container/30 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-secondary">storage</span>
+              </div>
+              <div>
+                <h3 class="font-700 text-primary mb-1">Local Document Processing</h3>
+                <p class="text-primary/60 leading-relaxed">
+                  Document ingestion, indexing, and retrieval all happen within your network. Your manuals, procedures, and reports never leave your infrastructure.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-primary-container/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-primary-container">vpn_lock</span>
+              </div>
+              <div>
+                <h3 class="font-700 text-primary mb-1">Air-Gapped Capable</h3>
+                <p class="text-primary/60 leading-relaxed">
+                  For the most sensitive environments, we deploy systems that operate fully air-gapped — no external network connections at all. Updates and model improvements are delivered physically.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-tertiary-container/20 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <span class="material-symbols-outlined text-tertiary">tune</span>
+              </div>
+              <div>
+                <h3 class="font-700 text-primary mb-1">Your Hardware, Your Control</h3>
+                <p class="text-primary/60 leading-relaxed">
+                  We help you spec and procure the right hardware, or deploy on equipment you already have. You own the infrastructure — we manage the software.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200" alt="Data center" class="rounded-lg shadow-lg w-full object-cover h-72 sm:h-[500px]">
+          <div class="absolute bottom-6 left-6 right-6 bg-surface/90 backdrop-blur-xl rounded-lg p-5 shadow-md">
+            <div class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-tertiary text-2xl">verified_user</span>
+              <div>
+                <h4 class="font-700 text-primary text-sm">Full Data Sovereignty</h4>
+                <p class="text-primary/60 text-xs">Your data is processed, stored, and controlled entirely within your infrastructure.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cloud vs Private -->
+  <section class="py-16 sm:py-24 bg-surface-low">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-12 text-center">Cloud AI vs. Private AI</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Cloud AI -->
+        <div class="bg-surface rounded-lg p-8 shadow-soft">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary/40 text-2xl">cloud</span>
+            <h3 class="text-xl font-700 text-primary">Cloud-Based AI</h3>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Your data is sent to external servers for processing</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Provider terms of service may allow data use for training</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Compliance audit trails are harder to maintain</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Internet connectivity required — single point of failure</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Costs scale with usage — API bills can surprise you as adoption grows</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Latency varies with provider load and network conditions</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Vendor lock-in — you're dependent on one provider's pricing, policies, and availability</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">add</span>
+              <p class="text-primary/60 text-sm">Fastest access to latest models</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">add</span>
+              <p class="text-primary/60 text-sm">No hardware investment needed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Private AI -->
+        <div class="bg-surface rounded-lg p-8 shadow-soft ring-2 ring-tertiary-container/30">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-tertiary text-2xl">lock</span>
+            <h3 class="text-xl font-700 text-primary">Private AI</h3>
+            <span class="text-xs font-600 text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded-full">Recommended</span>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">Data never leaves your network perimeter</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">Full control over data retention and usage</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">Simplified compliance — everything is auditable in-house</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">Works offline — no internet dependency</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">Predictable costs — fixed hardware investment, no per-query API bills</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">Consistent millisecond latency — no variability from network or provider load</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-tertiary text-xl mt-0.5">check</span>
+              <p class="text-primary/70 text-sm font-500">No vendor lock-in — switch models freely, on your terms</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Requires hardware investment</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="material-symbols-outlined text-primary/30 text-xl mt-0.5">remove</span>
+              <p class="text-primary/60 text-sm">Model updates require manual deployment</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-surface rounded-lg p-6 shadow-soft">
+        <div class="flex items-start gap-4">
+          <span class="material-symbols-outlined text-secondary text-2xl mt-1">lightbulb</span>
+          <div>
+            <h4 class="font-700 text-primary mb-2">It Doesn't Have to Be All or Nothing</h4>
+            <p class="text-primary/60 leading-relaxed">
+              Many of our clients use a hybrid approach: private AI for sensitive operational data, cloud AI for general-purpose tasks that don't involve proprietary information. BrightWire helps you draw the line and implement both.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Handle -->
+  <section class="py-16 sm:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-12 text-center">What We Handle</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-surface-low rounded-lg p-6 text-center">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">memory</span>
+          <h3 class="font-700 text-primary mb-2">Hardware Sizing</h3>
+          <p class="text-sm text-primary/60">We spec the right hardware for your workload — GPUs, memory, storage — so you don't over- or under-invest.</p>
+        </div>
+        <div class="bg-surface-low rounded-lg p-6 text-center">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">download</span>
+          <h3 class="font-700 text-primary mb-2">Model Selection</h3>
+          <p class="text-sm text-primary/60">We choose and configure the right open-source models for your use case — optimized for your hardware and your data.</p>
+        </div>
+        <div class="bg-surface-low rounded-lg p-6 text-center">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">settings</span>
+          <h3 class="font-700 text-primary mb-2">Deployment & Config</h3>
+          <p class="text-sm text-primary/60">Full deployment, security hardening, and integration with your existing authentication and access control systems.</p>
+        </div>
+        <div class="bg-surface-low rounded-lg p-6 text-center">
+          <span class="material-symbols-outlined text-secondary text-3xl mb-3 block">support_agent</span>
+          <h3 class="font-700 text-primary mb-2">Ongoing Support</h3>
+          <p class="text-sm text-primary/60">Monitoring, updates, model improvements, and troubleshooting — we manage the platform so you don't have to hire AI engineers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-24 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-800 text-white mb-4">Keep Your Data Where It Belongs</h2>
+      <p class="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
+        Let's talk about what private AI infrastructure looks like for your organization. We'll assess your needs, recommend an approach, and show you how it fits into the broader AI roadmap.
+      </p>
+      <a href="consultation.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary-container text-primary font-700 rounded-full hover:bg-yellow-300 transition-colors shadow-md text-base">
+        <span class="material-symbols-outlined text-xl">calendar_month</span>
+        Book a Strategy Session
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <a href="index.html" class="text-2xl font-800 text-white tracking-tight">
+            Bright<span class="text-secondary-container">Wire</span>
+          </a>
+          <p class="text-white/50 mt-3 max-w-md leading-relaxed">
+            Managed AI integration for energy companies. Start safe, scale smart.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm font-700 text-white/80 uppercase tracking-wider mb-4">Navigate</h4>
+          <div class="flex flex-col gap-2">
+            <a href="index.html" class="text-white/50 hover:text-white transition-colors text-sm">Home</a>
+            <a href="services.html" class="text-white/50 hover:text-white transition-colors text-sm">Services</a>
+            <a href="roadmap.html" class="text-white/50 hover:text-white transition-colors text-sm">AI Roadmap</a>
+            <a href="local-ai.html" class="text-white/50 hover:text-white transition-colors text-sm">Private AI</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-700 text-white/80 uppercase tracking-wider mb-4">Get Started</h4>
+          <div class="flex flex-col gap-2">
+            <a href="consultation.html" class="text-white/50 hover:text-white transition-colors text-sm">Book a Consultation</a>
+            <a href="roadmap.html" class="text-white/50 hover:text-white transition-colors text-sm">The 4-Phase Model</a>
+            <a href="mailto:hello@brightwire.ai" class="text-white/50 hover:text-white transition-colors text-sm">hello@brightwire.ai</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <p class="text-white/40 text-sm">&copy; 2026 BrightWire AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

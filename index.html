@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightWire AI — Managed AI Integration for Energy Companies</title>
+  <meta name="description" content="BrightWire helps energy companies adopt AI safely and incrementally — from zero-risk chatbots to autonomous operations. Managed AI integration built for IPPs, utilities, and renewable operators.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#331956',
+            'primary-container': '#4a306d',
+            secondary: '#7c5800',
+            'secondary-container': '#fdc65c',
+            tertiary: '#0d2d20',
+            'tertiary-container': '#244335',
+            surface: '#fef7fe',
+            'surface-low': '#f8f2f8',
+            'surface-mid': '#f0e8f0',
+          },
+          fontFamily: {
+            sans: ['Manrope', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            DEFAULT: '1rem',
+            lg: '2rem',
+            xl: '3rem',
+            full: '9999px',
+          },
+          boxShadow: {
+            soft: '0 4px 24px rgba(74, 48, 109, 0.06)',
+            md: '0 8px 32px rgba(74, 48, 109, 0.08)',
+            lg: '0 16px 48px rgba(74, 48, 109, 0.10)',
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-surface font-sans text-primary antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-3xl shadow-soft">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20">
+        <a href="index.html" class="text-xl sm:text-2xl font-800 text-primary tracking-tight">
+          Bright<span class="text-secondary">Wire</span>
+        </a>
+        <!-- Desktop Nav -->
+        <div class="hidden md:flex items-center gap-1">
+          <a href="index.html" class="px-4 py-2 text-sm font-700 text-primary border-b-2 border-secondary">Home</a>
+          <a href="services.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Services</a>
+          <a href="roadmap.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Roadmap</a>
+          <a href="local-ai.html" class="px-4 py-2 text-sm font-500 text-primary/70 hover:text-primary border-b-2 border-transparent hover:border-secondary/40 transition-all">Private AI</a>
+          <a href="consultation.html" class="ml-4 px-6 py-2.5 bg-primary text-white text-sm font-600 rounded-full hover:bg-primary-container transition-colors shadow-soft">
+            Book a Consultation
+          </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2 text-primary">
+          <span class="material-symbols-outlined text-3xl">menu</span>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden pb-4">
+        <div class="flex flex-col gap-1 bg-surface-low rounded-lg p-3">
+          <a href="index.html" class="px-4 py-3 text-sm font-700 text-primary bg-surface rounded-lg">Home</a>
+          <a href="services.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Services</a>
+          <a href="roadmap.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Roadmap</a>
+          <a href="local-ai.html" class="px-4 py-3 text-sm font-500 text-primary/70 hover:bg-surface rounded-lg transition-colors">Private AI</a>
+          <a href="consultation.html" class="mt-2 px-6 py-3 bg-primary text-white text-sm font-600 rounded-full text-center shadow-soft">Book a Consultation</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="relative pt-28 sm:pt-36 pb-16 sm:pb-24 overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200" alt="Solar energy panels" class="w-full h-full object-cover opacity-10">
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 bg-secondary-container/30 rounded-full text-secondary text-sm font-600 mb-6">
+          <span class="material-symbols-outlined text-base">bolt</span>
+          AI Integration for Energy
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-800 text-primary leading-tight mb-6">
+          Your team gets AI that works.<br>
+          <span class="text-primary-container/70">Starting with zero risk.</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-primary/70 leading-relaxed mb-10 max-w-2xl">
+          BrightWire brings managed AI integration to energy companies — IPPs, utilities, and renewable operators. We start with simple, read-only tools that deliver value on day one, then build toward full automation at your pace.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a href="consultation.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-600 rounded-full hover:bg-primary-container transition-colors shadow-md text-base">
+            <span class="material-symbols-outlined text-xl">calendar_month</span>
+            Book a Strategy Session
+          </a>
+          <a href="roadmap.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-surface-low text-primary font-600 rounded-full hover:bg-surface-mid transition-colors shadow-soft text-base">
+            <span class="material-symbols-outlined text-xl">route</span>
+            See the AI Roadmap
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4-Phase Overview -->
+  <section class="py-16 sm:py-24 bg-surface-low">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">A Smarter Path to AI Adoption</h2>
+        <p class="text-lg text-primary/60 max-w-2xl mx-auto">
+          Most companies try to leap straight to autonomous AI — and stall. Our 4-phase model starts where you are and builds incrementally.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Phase 1 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-tertiary-container/20 rounded-full flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-tertiary">chat</span>
+          </div>
+          <div class="text-xs font-700 text-secondary uppercase tracking-wider mb-2">Phase 1</div>
+          <h3 class="text-lg font-700 text-primary mb-2">Enterprise Chatbot</h3>
+          <p class="text-sm text-primary/60 leading-relaxed">
+            An AI assistant that answers questions from your existing documents. Read-only, zero risk. Immediate value from day one.
+          </p>
+          <div class="mt-4 inline-flex items-center gap-1 text-xs font-600 text-tertiary bg-tertiary-container/10 px-3 py-1 rounded-full">
+            <span class="material-symbols-outlined text-sm">verified_user</span>
+            Zero Risk
+          </div>
+        </div>
+        <!-- Phase 2 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-tertiary-container/20 rounded-full flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-tertiary">bar_chart</span>
+          </div>
+          <div class="text-xs font-700 text-secondary uppercase tracking-wider mb-2">Phase 2</div>
+          <h3 class="text-lg font-700 text-primary mb-2">Self-Serve Dashboards</h3>
+          <p class="text-sm text-primary/60 leading-relaxed">
+            AI-powered analytics your team can query in plain English. Still read-only — but now your data tells its own story.
+          </p>
+          <div class="mt-4 inline-flex items-center gap-1 text-xs font-600 text-tertiary bg-tertiary-container/10 px-3 py-1 rounded-full">
+            <span class="material-symbols-outlined text-sm">verified_user</span>
+            Read-Only
+          </div>
+        </div>
+        <!-- Phase 3 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-secondary-container/30 rounded-full flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-secondary">monitoring</span>
+          </div>
+          <div class="text-xs font-700 text-secondary uppercase tracking-wider mb-2">Phase 3</div>
+          <h3 class="text-lg font-700 text-primary mb-2">Data Agents</h3>
+          <p class="text-sm text-primary/60 leading-relaxed">
+            AI monitors your operations, spots anomalies, and recommends actions. Humans review and approve every decision.
+          </p>
+          <div class="mt-4 inline-flex items-center gap-1 text-xs font-600 text-secondary bg-secondary-container/20 px-3 py-1 rounded-full">
+            <span class="material-symbols-outlined text-sm">shield</span>
+            Human Approval
+          </div>
+        </div>
+        <!-- Phase 4 -->
+        <div class="bg-surface rounded-lg p-6 shadow-soft hover:shadow-md transition-shadow">
+          <div class="w-12 h-12 bg-primary-container/20 rounded-full flex items-center justify-center mb-4">
+            <span class="material-symbols-outlined text-primary-container">precision_manufacturing</span>
+          </div>
+          <div class="text-xs font-700 text-secondary uppercase tracking-wider mb-2">Phase 4</div>
+          <h3 class="text-lg font-700 text-primary mb-2">Autonomous Actions</h3>
+          <p class="text-sm text-primary/60 leading-relaxed">
+            AI executes within defined guardrails. You set the boundaries, AI handles the rest. Full control, full transparency.
+          </p>
+          <div class="mt-4 inline-flex items-center gap-1 text-xs font-600 text-primary bg-primary-container/10 px-3 py-1 rounded-full">
+            <span class="material-symbols-outlined text-sm">tune</span>
+            Your Guardrails
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-10">
+        <a href="roadmap.html" class="inline-flex items-center gap-2 text-primary font-600 hover:text-primary-container transition-colors">
+          Explore the full AI Roadmap
+          <span class="material-symbols-outlined text-xl">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Start Small -->
+  <section class="py-16 sm:py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-6">Why Most AI Projects Fail in Energy</h2>
+          <p class="text-lg text-primary/70 leading-relaxed mb-6">
+            When someone says "AI," most executives picture autonomous systems making critical decisions without human oversight. That's Phase 4 — the end of the journey, not the beginning.
+          </p>
+          <p class="text-lg text-primary/70 leading-relaxed mb-6">
+            Companies that try to start at Phase 4 face massive risk, organizational resistance, and stalled projects. The ones that succeed start small: a chatbot that answers questions from existing documentation. No risk, no disruption, just immediate value.
+          </p>
+          <div class="bg-surface-low rounded-lg p-6">
+            <div class="flex items-start gap-4">
+              <span class="material-symbols-outlined text-secondary text-3xl mt-1">lightbulb</span>
+              <div>
+                <h3 class="font-700 text-primary mb-2">The BrightWire Insight</h3>
+                <p class="text-primary/60">
+                  Phase 1 costs less than a single full-time hire. It delivers value in weeks, not years. And it builds the internal confidence your team needs to move to Phase 2 — and beyond.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200" alt="Team strategy meeting" class="rounded-lg shadow-lg w-full object-cover h-72 sm:h-96">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Overview -->
+  <section class="py-16 sm:py-24 bg-surface-low">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">What We Do</h2>
+        <p class="text-lg text-primary/60 max-w-2xl mx-auto">
+          Three services designed to meet energy companies wherever they are on the AI journey.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- AI Roadmapping -->
+        <a href="services.html" class="bg-surface rounded-lg p-8 shadow-soft hover:shadow-md transition-all group">
+          <div class="w-14 h-14 bg-secondary-container/30 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-secondary text-2xl">map</span>
+          </div>
+          <h3 class="text-xl font-700 text-primary mb-3 group-hover:text-primary-container transition-colors">AI Roadmapping</h3>
+          <p class="text-primary/60 leading-relaxed mb-4">
+            We assess where AI fits in your operations and build a phased plan tailored to your team, your data, and your risk tolerance.
+          </p>
+          <span class="inline-flex items-center gap-1 text-sm font-600 text-primary group-hover:text-secondary transition-colors">
+            Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </span>
+        </a>
+        <!-- Managed Integration -->
+        <a href="services.html" class="bg-surface rounded-lg p-8 shadow-soft hover:shadow-md transition-all group">
+          <div class="w-14 h-14 bg-tertiary-container/20 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-tertiary text-2xl">build</span>
+          </div>
+          <h3 class="text-xl font-700 text-primary mb-3 group-hover:text-primary-container transition-colors">Managed Integration</h3>
+          <p class="text-primary/60 leading-relaxed mb-4">
+            We build, deploy, and manage your AI tools end-to-end. Your team uses them — we keep them running and improving.
+          </p>
+          <span class="inline-flex items-center gap-1 text-sm font-600 text-primary group-hover:text-secondary transition-colors">
+            Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </span>
+        </a>
+        <!-- Staff Enablement -->
+        <a href="services.html" class="bg-surface rounded-lg p-8 shadow-soft hover:shadow-md transition-all group">
+          <div class="w-14 h-14 bg-primary-container/20 rounded-full flex items-center justify-center mb-5">
+            <span class="material-symbols-outlined text-primary-container text-2xl">school</span>
+          </div>
+          <h3 class="text-xl font-700 text-primary mb-3 group-hover:text-primary-container transition-colors">Staff Enablement</h3>
+          <p class="text-primary/60 leading-relaxed mb-4">
+            Training and change management so your team actually adopts the tools. AI only works if people use it.
+          </p>
+          <span class="inline-flex items-center gap-1 text-sm font-600 text-primary group-hover:text-secondary transition-colors">
+            Learn more <span class="material-symbols-outlined text-lg">arrow_forward</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-16 sm:py-24 bg-primary">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl sm:text-4xl font-800 text-white mb-4">Ready to See What AI Can Do for Your Team?</h2>
+      <p class="text-lg text-white/70 mb-10 max-w-2xl mx-auto">
+        Book a free strategy session. We'll walk through your operations, identify where AI fits, and show you what Phase 1 looks like — no commitment, no sales pitch.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="consultation.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-secondary-container text-primary font-700 rounded-full hover:bg-yellow-300 transition-colors shadow-md text-base">
+          <span class="material-symbols-outlined text-xl">calendar_month</span>
+          Book a Strategy Session
+        </a>
+        <a href="roadmap.html" class="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white/10 text-white font-600 rounded-full hover:bg-white/20 transition-colors text-base">
+          <span class="material-symbols-outlined text-xl">download</span>
+          Explore the AI Roadmap
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="bg-surface py-16 sm:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <p class="text-xs font-700 uppercase tracking-widest text-secondary mb-3">Our Team</p>
+        <h2 class="text-3xl sm:text-4xl font-800 text-primary mb-4">Built by People Who Know the Industry</h2>
+        <p class="text-lg text-primary/60 max-w-2xl mx-auto">We've spent years in energy operations. We know the data, the workflows, and the resistance to change. That's why our AI approach actually works.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Casey -->
+        <div class="bg-surface-low rounded-lg p-6 shadow-soft text-center">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Casey Martinez" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-700 text-primary">Casey Martinez</h3>
+          <p class="text-sm font-600 text-secondary mb-3">Co-Founder</p>
+          <p class="text-sm text-primary/60 leading-relaxed">Deep experience in the power market and renewable energy sector. Focused on bridging the gap between AI capabilities and real operational needs in the energy industry.</p>
+        </div>
+        <!-- Garrett -->
+        <div class="bg-surface-low rounded-lg p-6 shadow-soft text-center">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Garrett" class="w-28 h-28 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-700 text-primary">Garrett</h3>
+          <p class="text-sm font-600 text-secondary mb-3">Co-Founder</p>
+          <p class="text-sm text-primary/60 leading-relaxed">Brings strategic vision and industry relationships to BrightWire. Focused on helping energy companies navigate the AI adoption curve with confidence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary py-12 sm:py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <a href="index.html" class="text-2xl font-800 text-white tracking-tight">
+            Bright<span class="text-secondary-container">Wire</span>
+          </a>
+          <p class="text-white/50 mt-3 max-w-md leading-relaxed">
+            Managed AI integration for energy companies. Start safe, scale smart.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-sm font-700 text-white/80 uppercase tracking-wider mb-4">Navigate</h4>
+          <div class="flex flex-col gap-2">
+            <a href="index.html" class="text-white/50 hover:text-white transition-colors text-sm">Home</a>
+            <a href="services.html" class="text-white/50 hover:text-white transition-colors text-sm">Services</a>
+            <a href="roadmap.html" class="text-white/50 hover:text-white transition-colors text-sm">AI Roadmap</a>
+            <a href="local-ai.html" class="text-white/50 hover:text-white transition-colors text-sm">Private AI</a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-sm font-700 text-white/80 uppercase tracking-wider mb-4">Get Started</h4>
+          <div class="flex flex-col gap-2">
+            <a href="consultation.html" class="text-white/50 hover:text-white transition-colors text-sm">Book a Consultation</a>
+            <a href="roadmap.html" class="text-white/50 hover:text-white transition-colors text-sm">The 4-Phase Model</a>
+            <a href="mailto:hello@brightwire.ai" class="text-white/50 hover:text-white transition-colors text-sm">hello@brightwire.ai</a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-white/10 text-center">
+        <p class="text-white/40 text-sm">&copy; 2026 BrightWire AI. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

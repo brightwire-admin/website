@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.12
+  build:
+    commands:
+      - echo "Deploying to production S3 bucket..."
+      - |
+        aws s3 sync . s3://brightwire-ai-site/ \
+          --delete \
+          --exclude "buildspec*" \
+          --exclude ".git/*" \
+          --exclude ".gitignore" \
+          --exclude "README.md" \
+          --cache-control "max-age=86400"
+      - |
+        for f in *.html; do
+          aws s3 cp "s3://brightwire-ai-site/$f" "s3://brightwire-ai-site/$f" \
+            --content-type "text/html" \
+            --metadata-directive REPLACE \
+            --cache-control "max-age=300"
+        done
+  post_build:
+    commands:
+      - echo "Invalidating CloudFront cache..."
+      - |
+        aws cloudfront create-invalidation \
+          --distribution-id EI1RZGYQ5PYGN \
+          --paths "/*"
+      - echo "Production deployment complete."
