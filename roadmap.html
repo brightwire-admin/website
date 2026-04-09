@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The AI Roadmap — 4-Phase Adoption Model — BrightWire AI</title>
-  <meta name="description" content="BrightWire's 4-phase AI adoption model takes energy companies from zero-risk chatbots to autonomous operations. See the full roadmap — phases, timelines, and risk levels.">
+  <meta name="description" content="BrightWire's 4-phase AI adoption model takes energy companies from read-only chatbots to autonomous operations. See the full roadmap — phases, timelines, and safety at every step.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -172,12 +172,6 @@
             <h4 class="font-700 text-primary mb-4 text-center">Phase 1 at a Glance</h4>
             <div class="space-y-4">
               <div class="flex items-center justify-between py-2">
-                <span class="text-sm text-primary/60">Risk Level</span>
-                <span class="inline-flex items-center gap-1 text-sm font-600 text-tertiary bg-tertiary-container/10 px-3 py-1 rounded-full">
-                  <span class="material-symbols-outlined text-sm">verified_user</span> Zero
-                </span>
-              </div>
-              <div class="flex items-center justify-between py-2">
                 <span class="text-sm text-primary/60">Data Access</span>
                 <span class="text-sm font-600 text-primary">Read-Only</span>
               </div>
@@ -195,8 +189,12 @@
               </div>
             </div>
             <div class="mt-6 pt-4 border-t border-primary/5">
-              <p class="text-xs text-primary/40 text-center">
-                Read-only means exactly that. This system cannot modify data, trigger actions, or make decisions.
+              <div class="flex items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-tertiary text-lg">verified_user</span>
+                <h5 class="text-sm font-700 text-primary">Why It's Safe</h5>
+              </div>
+              <p class="text-xs text-primary/50">
+                Read-only means exactly that. This system cannot modify data, trigger actions, or make decisions. It only reads and retrieves — nothing more.
               </p>
             </div>
           </div>
@@ -253,12 +251,6 @@
             <h4 class="font-700 text-primary mb-4 text-center">Phase 2 at a Glance</h4>
             <div class="space-y-4">
               <div class="flex items-center justify-between py-2">
-                <span class="text-sm text-primary/60">Risk Level</span>
-                <span class="inline-flex items-center gap-1 text-sm font-600 text-tertiary bg-tertiary-container/10 px-3 py-1 rounded-full">
-                  <span class="material-symbols-outlined text-sm">verified_user</span> Minimal
-                </span>
-              </div>
-              <div class="flex items-center justify-between py-2">
                 <span class="text-sm text-primary/60">Data Access</span>
                 <span class="text-sm font-600 text-primary">Read-Only</span>
               </div>
@@ -274,6 +266,15 @@
                 <span class="text-sm text-primary/60">Can It Break Anything?</span>
                 <span class="text-sm font-700 text-tertiary">No</span>
               </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-primary/5">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-tertiary text-lg">verified_user</span>
+                <h5 class="text-sm font-700 text-primary">Why It's Safe</h5>
+              </div>
+              <p class="text-xs text-primary/50">
+                Still purely read-only. AI queries your databases but cannot modify, delete, or write any data. You get insights — nothing changes under the hood.
+              </p>
             </div>
           </div>
         </div>
@@ -329,12 +330,6 @@
             <h4 class="font-700 text-primary mb-4 text-center">Phase 3 at a Glance</h4>
             <div class="space-y-4">
               <div class="flex items-center justify-between py-2">
-                <span class="text-sm text-primary/60">Risk Level</span>
-                <span class="inline-flex items-center gap-1 text-sm font-600 text-secondary bg-secondary-container/20 px-3 py-1 rounded-full">
-                  <span class="material-symbols-outlined text-sm">shield</span> Moderate
-                </span>
-              </div>
-              <div class="flex items-center justify-between py-2">
                 <span class="text-sm text-primary/60">Data Access</span>
                 <span class="text-sm font-600 text-primary">Read + Recommend</span>
               </div>
@@ -350,6 +345,15 @@
                 <span class="text-sm text-primary/60">Can It Break Anything?</span>
                 <span class="text-sm font-600 text-primary">Not without approval</span>
               </div>
+            </div>
+            <div class="mt-6 pt-4 border-t border-primary/5">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-secondary text-lg">shield</span>
+                <h5 class="text-sm font-700 text-primary">Why It's Safe</h5>
+              </div>
+              <p class="text-xs text-primary/50">
+                Human-in-the-loop at every step. AI recommends — your team decides. Nothing happens without explicit human approval.
+              </p>
             </div>
           </div>
         </div>
@@ -405,12 +409,6 @@
             <h4 class="font-700 text-primary mb-4 text-center">Phase 4 at a Glance</h4>
             <div class="space-y-4">
               <div class="flex items-center justify-between py-2">
-                <span class="text-sm text-primary/60">Risk Level</span>
-                <span class="inline-flex items-center gap-1 text-sm font-600 text-primary bg-primary-container/10 px-3 py-1 rounded-full">
-                  <span class="material-symbols-outlined text-sm">tune</span> Managed
-                </span>
-              </div>
-              <div class="flex items-center justify-between py-2">
                 <span class="text-sm text-primary/60">Data Access</span>
                 <span class="text-sm font-600 text-primary">Read + Write (Bounded)</span>
               </div>
@@ -428,8 +426,12 @@
               </div>
             </div>
             <div class="mt-6 pt-4 border-t border-primary/5">
-              <p class="text-xs text-primary/40 text-center">
-                Phase 4 is earned, not assumed. Most companies reach it 12–18 months into their AI journey.
+              <div class="flex items-center gap-2 mb-2">
+                <span class="material-symbols-outlined text-primary-container text-lg">tune</span>
+                <h5 class="text-sm font-700 text-primary">Why It's Safe</h5>
+              </div>
+              <p class="text-xs text-primary/50">
+                You define strict guardrails — what AI can do, under what conditions, within what boundaries. Anything outside those limits gets escalated to a human. Full audit trail on every action.
               </p>
             </div>
           </div>
@@ -453,7 +455,7 @@
             </div>
             <h3 class="text-white font-700 mb-1">Chatbot</h3>
             <p class="text-white/50 text-sm">4–8 weeks</p>
-            <p class="text-white/30 text-xs mt-1">Zero Risk</p>
+            <p class="text-white/30 text-xs mt-1">Read-Only · Can't Break Anything</p>
           </div>
           <div class="text-center relative">
             <div class="w-16 h-16 bg-tertiary-container rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
@@ -461,7 +463,7 @@
             </div>
             <h3 class="text-white font-700 mb-1">Dashboards</h3>
             <p class="text-white/50 text-sm">6–12 weeks</p>
-            <p class="text-white/30 text-xs mt-1">Minimal Risk</p>
+            <p class="text-white/30 text-xs mt-1">Read-Only · Safe by Design</p>
           </div>
           <div class="text-center relative">
             <div class="w-16 h-16 bg-secondary-container rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
@@ -469,7 +471,7 @@
             </div>
             <h3 class="text-white font-700 mb-1">Data Agents</h3>
             <p class="text-white/50 text-sm">3–6 months</p>
-            <p class="text-white/30 text-xs mt-1">Human Approval</p>
+            <p class="text-white/30 text-xs mt-1">Human-in-the-Loop</p>
           </div>
           <div class="text-center relative">
             <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
@@ -477,7 +479,7 @@
             </div>
             <h3 class="text-white font-700 mb-1">Autonomous</h3>
             <p class="text-white/50 text-sm">6–12+ months</p>
-            <p class="text-white/30 text-xs mt-1">Your Guardrails</p>
+            <p class="text-white/30 text-xs mt-1">Your Guardrails · Full Audit Trail</p>
           </div>
         </div>
       </div>
